@@ -22,6 +22,9 @@
 ### General project setup
 general:
 
+  jenkinsKubernetes:
+    jnlpAgent: 'custom-jenkins-agent-k8s:latest'
+
 
 ### Step-specific configuration
 steps:
