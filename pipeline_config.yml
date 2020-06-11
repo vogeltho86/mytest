@@ -17,16 +17,15 @@
 # This is a YAML-file. YAML is a indentation-sensitive file format. Please make sure to properly indent changes to it.
 ###
 
-# set environment variable
+
 
 ### General project setup
-
 general:
-
-
 
 ### Step-specific configuration
 steps:
+  mavenExecute:
+    dockerImage: devxci/mbtci:1.0.4
 
 
 ### Stage-specific configuration
@@ -36,7 +35,11 @@ stages:
   # Remove it when you have added your first test
   s4SdkQualityChecks:
     jacocoExcludes:
-      - '**/OrdersService.class'
+      - '**/gen/**'
+      - '**/Application.class'
+
+#  npmAudit:
+#    auditedAdvisories:
 
 #  integrationTests:
 #    credentials:
