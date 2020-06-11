@@ -17,13 +17,12 @@
 # This is a YAML-file. YAML is a indentation-sensitive file format. Please make sure to properly indent changes to it.
 ###
 
-
+# set environment variable
 
 ### General project setup
+
 general:
 
-  jenkinsKubernetes:
-    jnlpAgent: 'custom-jenkins-agent-k8s:latest'
 
 
 ### Step-specific configuration
