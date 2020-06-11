@@ -17,9 +17,6 @@
  */
 String pipelineVersion = "master"
 
-general:
-  jenkinsKubernetes:
-    jnlpAgent: 'custom-jenkins-agent-k8s:latest'
 
 library "s4sdk-pipeline-library@${pipelineVersion}"
 cloudSdkPipeline(script: this)
