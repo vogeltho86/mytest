@@ -17,6 +17,10 @@
  */
 String pipelineVersion = "master"
 
+general:
+  jenkinsKubernetes:
+    jnlpAgent: 'custom-jenkins-agent-k8s:latest'
+
 node {
     deleteDir()
     sh "git clone --depth 1 https://github.com/SAP/cloud-s4-sdk-pipeline.git -b ${pipelineVersion} pipelines"
